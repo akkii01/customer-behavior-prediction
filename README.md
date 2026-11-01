@@ -71,6 +71,7 @@ customer-behavior-prediction/
 ├── Dockerfile                # Container build specification
 ├── requirements.txt          # Pinned runtime dependencies
 └── README.md                 # System documentation
+```
 
 🚀 Quickstart & Execution
 1. Local Environment Setup
