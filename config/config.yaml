@@ -1,0 +1,17 @@
+data:
+  raw_path: "data/raw/online_retail_II.xlsx"
+  interim_path: "data/interim/cleaned_transactions.parquet"
+  processed_features_path: "data/processed/customer_features.parquet"
+
+cleaning:
+  churn_threshold_days: 90
+  min_quantity: 1
+  min_price: 0.001
+
+features:
+  recency_cutoff_date: "2011-09-01"
+
+modeling:
+  random_state: 42
+  test_size: 0.15
+  val_size: 0.15

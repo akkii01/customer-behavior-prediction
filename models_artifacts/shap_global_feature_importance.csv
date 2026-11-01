@@ -1,0 +1,12 @@
+Feature,Mean_SHAP_Impact
+engagement_score,0.5680284
+recency,0.38381442
+purchase_velocity,0.24033554
+avg_order_value,0.10834835
+std_days_between,0.10207193
+tenure_days,0.09170176
+monetary_value,0.0907234
+avg_basket_size,0.086250894
+total_items,0.068222076
+avg_days_between,0.066695936
+frequency,0.016942805

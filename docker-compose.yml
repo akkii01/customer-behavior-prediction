@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  vantara-platform:
+    build: .
+    container_name: vantara_customer_intelligence
+    ports:
+      - "8000:8000"
+      - "8501:8501"
+    environment:
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./data:/app/data
+      - ./models_artifacts:/app/models_artifacts
+    restart: unless-stopped
