@@ -75,8 +75,7 @@ customer-behavior-prediction/
 
 ## 🚀 Quickstart & Execution
 1. Local Environment Setup
-```
-Bash
+```Bash
 git clone https://github.com/akkii01/customer-behavior-prediction.git
 cd customer-behavior-prediction
 python -m venv venv
@@ -85,8 +84,7 @@ pip install -r requirements.txt
 ```
 
 2. Run Data Pipeline & Training
-```
-Bash
+```Bash
 python src/data/clean_data.py
 python src/features/build_features.py
 python src/models/train.py
@@ -95,8 +93,7 @@ python src/explainability/explain.py
 ```
 
 3. Launch Applications
-```
-Bash
+```Bash
 # Start FastAPI Service (Port 8000)
 uvicorn api.main:app --reload
 
@@ -105,7 +102,6 @@ streamlit run frontend/dashboard.py
 ```
 
 4. Run Automated Tests
-```
-Bash
+```Bash
 pytest tests/test_features.py
 ```
