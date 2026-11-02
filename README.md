@@ -77,7 +77,7 @@ customer-behavior-prediction/
 1. Local Environment Setup
 ```
 Bash
-git clone [https://github.com/akkii01/customer-behavior-prediction.git](https://github.com/akkii01/customer-behavior-prediction.git)
+git clone https://github.com/akkii01/customer-behavior-prediction.git
 cd customer-behavior-prediction
 python -m venv venv
 source venv/bin/activate  # On Windows: .\venv\Scripts\Activate
