@@ -74,17 +74,20 @@ customer-behavior-prediction/
 ```
 
 ## 🚀 Quickstart & Execution
-1. Local Environment Setup
-```Bash
+
+### 1. Local Environment Setup
+Clone the repository and activate the isolated virtual environment:
+```bash
 git clone https://github.com/akkii01/customer-behavior-prediction.git
 cd customer-behavior-prediction
 python -m venv venv
-source venv/bin/activate  # On Windows: .\venv\Scripts\Activate
+.\venv\Scripts\Activate
 pip install -r requirements.txt
 ```
 
-2. Run Data Pipeline & Training
-```Bash
+### 2. Run Data Pipeline & Model Training
+Execute the end-to-end data processing, feature engineering, and model training:
+```bash
 python src/data/clean_data.py
 python src/features/build_features.py
 python src/models/train.py
@@ -92,16 +95,26 @@ python src/segmentation/cluster.py
 python src/explainability/explain.py
 ```
 
-3. Launch Applications
-```Bash
-# Start FastAPI Service (Port 8000)
-uvicorn api.main:app --reload
+### 3. Launch & Access Applications Locally
 
-# Start Streamlit Dashboard (Port 8501)
+#### Launch Streamlit Interactive Dashboard (Web UI):
+Run this command in your terminal:
+```bash
 streamlit run frontend/dashboard.py
 ```
+After executing, open your browser and navigate to:
+* **Dashboard Local URL:** http://localhost:8501
 
-4. Run Automated Tests
-```Bash
+#### Launch FastAPI REST Service:
+In a separate terminal tab, run:
+```bash
+uvicorn api.main:app --reload
+```
+Access the interactive API documentation (Swagger UI) at:
+* **Interactive API Docs:** http://127.0.0.1:8000/docs
+
+### 4. Run Automated Test Suite
+Verify zero target leakage and data integrity:
+```bash
 pytest tests/test_features.py
 ```
