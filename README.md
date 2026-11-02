@@ -73,7 +73,7 @@ customer-behavior-prediction/
 └── README.md                 # System documentation
 ```
 
-🚀 Quickstart & Execution
+## 🚀 Quickstart & Execution
 1. Local Environment Setup
 ```
 Bash
