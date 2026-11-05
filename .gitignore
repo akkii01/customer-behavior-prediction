@@ -4,3 +4,5 @@ __pycache__/
 data/raw/*.xlsx
 data/raw/*.zip
 .pytest_cache/
+unvibecode_results/
+.unvibecode*
